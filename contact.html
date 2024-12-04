@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="script.css">
+        <script>
+            function validateForm() {
+                var name = document.forms["contactForm"]["name"].value.trim();
+                var email = document.forms["contactForm"]["email"].value.trim();
+                var message = document.forms["contactForm"]["message"].value.trim();
+
+                if (name === "") {
+                    alert("Name is Empty");
+                    document.forms["contactForm"]["name"].focus();
+                    return false;
+                } else if (!/^[a-zA-Z]+$/.test(name)) {
+                    alert("Name must contain only alphabetic characters");
+                    document.forms["contactForm"]["name"].focus();
+                    return false;
+                } else if (email === "") {
+                    alert("Email is Empty");
+                    document.forms["contactForm"]["email"].focus();
+                    return false;
+                } else if (!/^\w+([\.-]?\w+)*@gmail\.com$/.test(email)) {
+                    alert("Invalid Gmail address");
+                    document.forms["contactForm"]["email"].focus();
+                    return false;
+                } else if (message === "") {
+                    alert("Message is Empty");
+                    document.forms["contactForm"]["message"].focus();
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-container">
+                <div class="logo">
+                    <h1>anna</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Bloglist.html">Blog list</a></li>
+                        <li><a href="Blogdetails.html">Blog Details</a></li>
+                        <li><a href="Gallery.html" >Gallery</a></li>
+                        <li><a href="#" id="active">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="contact">
+            <div class="container">
+                <h2 id="cont">Contact Me</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h3>Send me a message</h3>
+                        <form name="contactForm" onsubmit="return validateForm()">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Enter Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>&phone; +977 986-656681</p>
+                        <a href="mailto:anamikatamang764@gmail.com"><p>&#9993; anamikatamang764@gmail.com</p></a>
+                        <p>&#127968;Kathmandu, Tinkune, Nepal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; &reg;</p>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

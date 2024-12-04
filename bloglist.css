@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container{
+  background-color: turquoise;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  
+}
+
+.menu ul{
+  width: 800px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.menu ul li a:hover{
+  border-bottom: 3px solid red;
+}
+
+#active{
+  color: white;
+}
+
+.menu{
+  margin-left: 90px;
+}
+
+.logo{
+  margin-left: 40px;
+}
+
+.logo h1{
+  text-transform: uppercase;
+}
+
+.top-section{
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(img/green.webp);
+}
+
+  
+  /* Table Styles */
+  table {
+    padding-top: 100px;
+    width: 100%; /* Set table to full width */
+    border-collapse: collapse; /* Remove space between cells */
+  }
+  
+  th,
+  td {
+    padding: 100px; /* Add padding to cells */
+    border: 1px solid #ddd; /* Add border to cells */
+    text-align: left; /* Align text left */
+    font-family: cursive;
+    font-weight: bold;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+  }
+  
+  a {
+    color: #000; /* Black color for links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  /* Blog List Styles */
+  .section-heading {
+    text-align: center; /* Center section heading */
+    margin-bottom: 20px; /* Add space below heading */
+  }
+  
+  .service-cards {
+    display: flex; /* Arrange cards horizontally */
+   /* Wrap cards to next line when full */
+    justify-content: space-between; /* Space cards evenly */
+  }
+  
+  .service-card {
+    width: 30%; /* Set card width */
+    margin: 10px; /* Add margin between cards */
+    border: 1px solid #ddd; /* Add border to cards */
+    padding: 10px; /* Add padding to cards */
+    text-align: center; /* Center content within cards */
+    font-family:'Times New Roman', Times, serif;
+    color: green;
+
+  }
+  
+  .service-card img {
+    width: 100%; /* Set image width to 100% of card */
+    margin-bottom: 10px; /* Add space below image */
+  }
+  
+  .service-card p {
+    line-height: 1.5; /* Increase line spacing for readability */
+  }
+
+  footer {
+    background-color: turquoise; /* Adjust background color as desired */
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  footer ul li a:hover {
+    color: #e50000;
+  }
